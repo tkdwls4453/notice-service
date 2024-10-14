@@ -1,5 +1,6 @@
-package com.example.noticeservice.domain;
+package com.example.noticeservice.notification;
 
+import com.example.noticeservice.product.ProductUserNotification;
 import java.util.List;
 import java.util.concurrent.PriorityBlockingQueue;
 

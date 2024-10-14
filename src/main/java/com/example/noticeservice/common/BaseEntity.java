@@ -1,5 +1,6 @@
-package com.example.noticeservice.domain;
+package com.example.noticeservice.common;
 
+import com.example.noticeservice.product.ProductUserNotification;
 import jakarta.persistence.EntityListeners;
 import jakarta.persistence.MappedSuperclass;
 import java.time.LocalDateTime;

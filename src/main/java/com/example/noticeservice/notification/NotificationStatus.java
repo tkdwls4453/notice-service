@@ -1,4 +1,4 @@
-package com.example.noticeservice.domain;
+package com.example.noticeservice.notification;
 
 
 import java.util.List;

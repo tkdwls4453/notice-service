@@ -1,10 +1,10 @@
-package com.example.noticeservice.service;
+package com.example.noticeservice.notification.service;
 
-import com.example.noticeservice.domain.NotificationManager;
-import com.example.noticeservice.domain.Product;
-import com.example.noticeservice.repository.ProductUserNotificationRepository;
-import com.example.noticeservice.domain.NotificationStatus;
-import com.example.noticeservice.domain.ProductUserNotification;
+import com.example.noticeservice.notification.NotificationManager;
+import com.example.noticeservice.product.Product;
+import com.example.noticeservice.product.repository.ProductUserNotificationRepository;
+import com.example.noticeservice.notification.NotificationStatus;
+import com.example.noticeservice.product.ProductUserNotification;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

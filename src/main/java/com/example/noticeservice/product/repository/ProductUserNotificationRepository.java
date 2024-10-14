@@ -1,9 +1,9 @@
-package com.example.noticeservice.repository;
+package com.example.noticeservice.product.repository;
 
 
-import com.example.noticeservice.domain.Product;
-import com.example.noticeservice.domain.NotificationStatus;
-import com.example.noticeservice.domain.ProductUserNotification;
+import com.example.noticeservice.notification.NotificationStatus;
+import com.example.noticeservice.product.Product;
+import com.example.noticeservice.product.ProductUserNotification;
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;

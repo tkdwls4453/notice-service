@@ -1,5 +1,8 @@
-package com.example.noticeservice.domain;
+package com.example.noticeservice.product;
 
+import com.example.noticeservice.common.BaseEntity;
+import com.example.noticeservice.notification.NotificationStatus;
+import com.example.noticeservice.common.User;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

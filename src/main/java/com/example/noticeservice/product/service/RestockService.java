@@ -1,7 +1,8 @@
-package com.example.noticeservice.service;
+package com.example.noticeservice.product.service;
 
-import com.example.noticeservice.domain.Product;
-import com.example.noticeservice.repository.ProductRepository;
+import com.example.noticeservice.notification.service.NoticeService;
+import com.example.noticeservice.product.Product;
+import com.example.noticeservice.product.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

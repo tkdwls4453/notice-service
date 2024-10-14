@@ -1,4 +1,4 @@
-package com.example.noticeservice.domain;
+package com.example.noticeservice.common;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
