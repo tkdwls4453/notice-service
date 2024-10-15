@@ -4,23 +4,29 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.AccessLevel;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
-/**
- * 재입고
- * 상품을 조회한다.
- * 상품 재고를 늘린다, -재입고 회차 증가 > 도메인 (product)
- * 재입고 알림 설정 유저 목록 읽어오기 -> 서비스
- * 유저에게 재입고 알림 메시지 순서대로 전송하기 -> 도메인 (notice)
- */
+@Getter
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Entity
 public class Product {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private int stockQuantity;
-    private int restockRound;
+    private Integer stockQuantity;
+    private Integer restockRound;
+
+    @Builder
+    private Product(Long id, Integer stockQuantity) {
+        this.id = id;
+        this.stockQuantity = stockQuantity;
+        this.restockRound = 0;
+    }
 
     public void restock(int quantity){
         this.stockQuantity += quantity;
@@ -29,5 +35,9 @@ public class Product {
 
     public boolean isOutOfStock(){
         return this.stockQuantity <= 0;
+    }
+
+    public void decreaseStock(){
+        this.stockQuantity--;
     }
 }
